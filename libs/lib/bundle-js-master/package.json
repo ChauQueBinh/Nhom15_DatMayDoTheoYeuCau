@@ -1,0 +1,41 @@
+{
+  "name": "bundle-js",
+  "version": "1.0.3",
+  "description": "Bundle your inter-dependent Javascript files in the correct order",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugabor/bundle-js.git"
+  },
+  "bin": {
+    "bundle-js": "./bin/bundle-js.js"
+  },
+  "keywords": [
+    "bundle",
+    "js",
+    "browser",
+    "module",
+    "package",
+    "concat",
+    "concatenate",
+    "rollup",
+    "roll",
+    "up",
+    "require",
+    "include"
+  ],
+  "author": "hugabor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugabor/bundle-js/issues"
+  },
+  "homepage": "https://github.com/hugabor/bundle-js#readme",
+  "engines": {
+    "node": ">=6.8.1"
+  },
+  "dependencies": {
+    "js-beautify": "^1.6.4",
+    "optimist": "^0.6.1",
+    "resolve": "^1.4.0"
+  }
+}
