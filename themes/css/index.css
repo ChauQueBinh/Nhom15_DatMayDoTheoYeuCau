@@ -1,0 +1,27 @@
+header .container-fluid  {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 1100;
+   
+}
+header .container-fluid #sidebar {
+  
+    background: white!important;
+}
+
+
+header .container-fluid #sidebar ul.menu li.menu-item {
+
+    padding: 0 35px !important;
+  
+}
+.logo{
+width: 50%;
+}
+
+.menu-sub--product .container--w {
+    width: 10px;
+}
+
+
+

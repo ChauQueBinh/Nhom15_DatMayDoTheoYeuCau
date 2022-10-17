@@ -1,0 +1,109 @@
+.container {
+  width: 80%;
+}
+.imageProduct {
+  height: 150px;
+  width: 150px;
+}
+.imageBanner {
+  height: 150px;
+  width: 300px;
+}
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1b1e21;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.item {
+  font-size: 14px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  background: #f2f2f2;
+  border-bottom: black 2px dashed;
+}
+.item-title {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.item-des {
+  font-size: 13px;
+  color: black;
+}
+.collapsed {
+  color: black;
+  font-size: 23px;
+}
+.panel-heading {
+  height: 105px;
+  width: 860px;
+  font-size: 14px;
+  background: #ffffff;
+  padding: 30px 0px;
+  color: black;
+}
+.recruitment {
+}
+.box_group {
+  width: 700px;
+  border-bottom: black 2px dashed;
+}
+.btn {
+  font-size: 23px;
+}
+.faq-content {
+}
+.col-xs-12 col-sm-12 col-md-9 col-lg-9 {
+}
+.policy {
+  width: 1200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.6em;
+  padding: 0px 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.titlePolicy {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: darkgray 2px dashed;
+}
+
+.value {
+  display: block;
+  text-align: center;
+}
+.img-responsive {
+  margin: 0px 250px;
+}
+.btn-buy-cont {
+  border-radius: 0px;
+  background-color: #f15e2c;
+  color: #fff;
+  font-size: 23px;
+  height: 80px;
+  width: 415px;
+  padding-top: 24px;
+  margin-top: 30px;
+  align-items: center;
+}
+.container-main {
+  align-items: center;
+}
