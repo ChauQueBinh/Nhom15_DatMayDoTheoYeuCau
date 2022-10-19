@@ -11,12 +11,12 @@ header .container-fluid #sidebar {
 
 
 header .container-fluid #sidebar ul.menu li.menu-item {
-
-    padding: 0 35px !important;
+    padding: 0px 15px 0px 0px !important;
+    /* padding: 0 35px !important; */
   
 }
 .logo{
-width: 50%;
+width: 60%;
 }
 
 .menu-sub--product .container--w {
