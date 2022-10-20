@@ -11,7 +11,7 @@ header .container-fluid #sidebar {
 
 
 header .container-fluid #sidebar ul.menu li.menu-item {
-    padding:    0px 70px 0px 0px !important;
+    padding:    0px 4% 0px 0px !important;
 
   
 }
@@ -46,6 +46,12 @@ header .container-fluid #sidebar ul.menu li.menu-item .menu-sub {
     background-color: #4c4c4c;
     display: none;
    font-size: 20px;
+}
+.btn:not(:disabled):not(.disabled) {
+    color: white;
+}
+header .container-fluid #top-head ul li {
+    padding: 8px 15px;
 }
 
 
