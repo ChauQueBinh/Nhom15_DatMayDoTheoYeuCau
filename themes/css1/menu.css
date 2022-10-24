@@ -42,7 +42,7 @@ header .container-fluid #sidebar ul.menu li.menu-item .menu-sub {
     left: 0%;
     z-index: 2;
     min-width: 12vw;
-    height: 350px;
+    height: 400px;
     background-color: #4c4c4c;
     display: none;
    font-size: 20px;
