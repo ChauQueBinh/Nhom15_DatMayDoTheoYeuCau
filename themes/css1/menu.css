@@ -41,17 +41,24 @@ header .container-fluid #sidebar ul.menu li.menu-item .menu-sub {
     top: 100%;
     left: 0%;
     z-index: 2;
-    min-width: 12vw;
+    min-width: 15vw;
     height: 400px;
     background-color: #4c4c4c;
     display: none;
    font-size: 20px;
+
 }
 .btn:not(:disabled):not(.disabled) {
     color: white;
 }
 header .container-fluid #top-head ul li {
     padding: 8px 15px;
+}
+.glider--poster {
+    /* margin-top: 128px; */
+}
+.main_home_page{
+    padding-top: 180px;
 }
 
 

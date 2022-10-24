@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G15 - MBA</title>
+    <link rel="shortcut icon" href="images/logo/logo1.png" type="image/x-icon">
+    <!-- THEME -->
+    <script src="libs/jquery/jquery-3.5.1.slim.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/Glider.js-master/glider.css">
+    <link rel="stylesheet" href="libs/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="themes/css/main.css">
+    <link rel="stylesheet" href="themes/css/style_section.css">
+    <link rel="stylesheet" href="themes/css1/menu.css">
+    <link rel="stylesheet" href="themes/css1/footer.css">
+
+
+  <!-- JS -->
+    <script src="themes/js/main.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div id="top-head">
+                <div class="container">
+                    <div class="d-flex">
+
+                        <div class="col-md-12 col-sm-12">
+
+                            <ul class="d-flex">
+                                <!-- Tìm kiếm -->
+                                <div class="col-md-5">
+                                    <form id="searchBox">
+                                        <div class="form-group d-flex">
+                                            <input type="text" name="searchInput" id="searchInput" class="form-control"
+                                                placeholder="Bạn cần tìm..." aria-describedby="helpId" />
+                                            <a href="tim-kiem.html" class="btn" id="searchBtn">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- kết thúc tìm kiếm -->
+
+
+                                <!-- <li>
+                    <img src="images/icon_dang_nhap.png" alt="" />
+                    <a href="dang-nhap.html" data-toggle="modal" data-target="#funct_login">
+                      <span id="get_name_user">Đăng nhập</span>
+                    </a>
+                  </li>
+                  <li>
+                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                    <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
+                  </li> -->
+
+                                <li>
+                                    <img src="images/icon_dang_nhap.png" alt="" />
+                                    <a href="dang-nhap.html">Đăng nhập</a>
+                                </li>
+                                <li>
+                                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                                    <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
+                                </li>
+                                <li>
+                                    <img src="images/icon_tim_cua_hang.png" alt="" />
+                                    <a href="tim-cua-hang.html">Tìm cửa hàng</a>
+                                </li>
+                                <li>
+                                    <img src="images/icon_heart_header.png" alt="" />
+                                    <a href="yeu-thich.html">Yêu thích</a>
+                                </li>
+                                <li>
+                                    <img src="images/icon_gio_hang.png" alt="" />
+                                    <a href="gio-hang.html">Giỏ hàng (<span>1</span>)</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu -->
+            <div id="sidebar" class="bg-light">
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <a href="index.html">
+                                <img src="images/logo/logo.png" alt="" class="logo" />
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <ul class="menu d-flex">
+
+                                <li class="menu-item">
+                                    <a href="san-pham.html" class="d-flex">
+                                        <h4>SẢN PHẨM</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+
+                                    <div class="menu-sub menu-sub--product">
+                                        <div class="container container--w">
+                                            <div class="d-flex my-3">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="box box">
+
+                                                        <div class="box__group">
+                                                            <ul>
+                                                                <li><a href="damVay.html">Dạ hội</a></li>
+                                                                <li><a href="damVay.html">Đầm, váy</a></li>
+                                                                <li><a href="aoDai.html">Áo dài</a></li>
+                                                                <li><a href="vest.html">Vest</a></li>
+                                                                <li><a href="chanVay.html">Chân váy</a></li>
+                                                                <li><a href="quan.html">Quần</a></li>
+                                                                <li><a href="setDo.html">Set đồ</a></li>
+                                                                <li><a href="aoKhoac.html">Áo khoác</a></li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="sale-off.html" class="d-flex">
+                                        <h4>KHUYẾN MÃI</h4>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="sale-off.html" class="d-flex">
+                                        <h4>GIỚI THIỆU</h4>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="sale-off.html" class="d-flex">
+                                        <h4>LIÊN HỆ</h4>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- end menu -->
+
+
+        </div>
+    </header>
+
+    <!-- main -->
+    <main id="home_page">
+        <div class="main_home_page">
+            <section id="section_banner">
+                <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <a class="carousel-item active">
+                            free shipping hoá đơn từ 800k!
+                        </a>
+                        <a class="carousel-item">
+                            hàng 2 tuần nhận đổi - giày nữa năm bảo hành
+                        </a>
+                        <a class="carousel-item">
+                            buy more pay less - áp dụng khi mua phụ kiện
+                        </a>
+                    </div>
+                    <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
+                        <!-- carousel-control-prev-icon -->
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        <!-- end header -->
+  <section id="gio_hang_page">
+    <div class="container">
+      <div class="d-flex">
+        <artical id="content_cart" class="col-md-8 mr-4">
+         
+          <div id="my_cart" class="show">
+            <div class="title">
+              <h4>GIỎ HÀNG</h4>
+            </div>
+            <div id="list_order">
+              <div class="card">
+                <div class="row no-gutters">
+                  <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="...">
+                  <div class="card-body col-md-6">
+                    <h4 class="card-title"><a href="#">Basas Mono - High Top - All White</a></h4>
+                    <p class="card-price"><strong>Giá:</strong> <span id="get_price_id">520</span>.000 VND</p>
+                    <div class="edit_box">
+                      <div class="box_group">
+                        <form id="edit_info_prod">
+                          <div class="d-flex">
+                            <div class="form-group col-md-6">
+                              <label for="get_size_prod">SIZE</label>
+                              <div id="collapse_size">
+                                <a class="btn" data-toggle="collapse" href="#select_collapse" aria-expanded="false"
+                                  aria-controls="select_collapse" id="btn_select">
+                                  <span id="get_size_prod">35</span>
+                                  <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="collapse" id="select_collapse">
+                                  <ul class="select">
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt0" value="35">35
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt1" value="36">36
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt2" value="37">37
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt3" value="38">38
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt4" value="39">39
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt5" value="40">40
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt6" value="41">41
+                                    </li>
+                                    <li class="opt">
+                                      <input type="radio" name="size" id="opt7" value="42">42
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="get_quantity_order">
+                                SỐ LƯỢNG
+                              </label>
+                              <input type="text" name="get_quantity_order" id="get_quantity_order">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="check_price col-md-3">
+                    <h4><span class="check_price_prod">520</span>.000 VND</h4>
+                    <i class="check_val_prod">Còn hàng</i>
+                    <button class="choose_btn">
+                      <i class="fas fa-check"></i>
+                    </button>
+                    <button class="delete_btn">
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div id="btn_handle">
+              <div class="d-flex">
+                <div class="col-md-6">
+                  <button id="del_all_prod">XÓA HẾT</button>
+                </div>
+                <div class="col-md-6">
+                  <a href="san-pham.html" class="btn">QUAY LẠI MUA HÀNG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="add_prods" class="mb-5">
+            <div class="title bottom--edit">
+              <h5>BẠN CÓ CẦN THÊM?</h5>
+            </div>
+          
+            <div id="carousel_add_prod" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item">
+                  <div class="col-md-6 card mb-3">
+                    <div class="row no-gutters">
+                      <a href="#" class="col-md-5">
+                        <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="card_img">
+                      </a>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <a href="chi-tiet-san-pham.html" class="card-title">Basas Mono - High Top - All White</a>
+                          <p class="card-text"><span id="get_price_id">520</span>.000 VND</p>
+                          <button class="add_btn">THÊM</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-6 card mb-3">
+                    <div class="row no-gutters">
+                      <a href="#" class="col-md-5">
+                        <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="card_img">
+                      </a>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Basas Mono - High Top - All Black</a>
+                          <p class="card-text"><span id="get_price_id">490</span>.000 VND</p>
+                          <button class="add_btn">THÊM</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-6 card mb-3">
+                    <div class="row no-gutters">
+                      <a href="#" class="col-md-5">
+                        <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="card_img">
+                      </a>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Basas New Simple Life - High Top - Taupe</a>
+                          <p class="card-text"><span id="get_price_id">520</span>.000 VND</p>
+                          <button class="add_btn">THÊM</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-6 card mb-3">
+                    <div class="row no-gutters">
+                      <a href="#" class="col-md-5">
+                        <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="card_img">
+                      </a>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Basas Bumper Gum - High Top - Offwhite/Gum</a>
+                          <p class="card-text"><span id="get_price_id">490</span>.000 VND</p>
+                          <button class="add_btn">THÊM</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-6 card mb-3">
+                    <div class="row no-gutters">
+                      <a href="#" class="col-md-5">
+                        <img src="images/product/ao_dai/AoDai01.jpg" class="card-img" alt="card_img">
+                      </a>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Basas New Simple Life - High Top - Black</a>
+                          <p class="card-text"><span id="get_price_id">510</span>.000 VND</p>
+                          <button class="add_btn">THÊM</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel_add_prod" role="button" data-slide="prev">
+                <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel_add_prod" role="button" data-slide="next">
+                <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <script>
+              $('#gio_hang_page .carousel-item').siblings(':first').addClass("active");
+              $("#gio_hang_page").ready(function () {
+                $('#carousel_add_prod').carousel({
+                  interval: 3000
+                })
+                var items = $('#gio_hang_page .carousel-item');
+                $('#gio_hang_page .carousel-item').each(function () {
+                  var minPerSlide = 3;
+                  var next = $(this).next();
+                  if (!next.length) {
+                    next = $(this).siblings(':first');
+                  }
+                  next.children(':first-child').clone().appendTo($(this));
+
+                  for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                      next = $(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+                  }
+                });
+
+              })
+
+            </script>
+          </div>
+
+
+        </artical>
+        <artical id="total_cart" class="col-md-4">
+          <h4>ĐƠN HÀNG</h4>
+          <form id="frm_bill">
+            <div class="form-group">
+              <label for="ip_code">NHẬP MÃ KHUYẾN MÃI</label>
+              <div class="d-flex">
+                <div class="col-md-8 pl-0">
+                  <input type="text" name="ip_code" id="ip_code">
+                </div>
+                <div class="col-md-4">
+                  <button>ÁP DỤNG</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-12 d-flex">
+                <strong>Đơn hàng</strong>
+                <strong>
+                  <span id="get_total_price">520</span>
+                  .000 VND
+                </strong>
+              </div>
+              <div class="col-md-12 d-flex">
+                <strong>Giảm</strong>
+                <strong><span id="get_code">0</span> VND</strong>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                <h5>TẠM TÍNH</h5>
+                <h3>
+                  <span id="total_price_final">520</span>.000 VND
+                </h3>
+              </div>
+            </div>
+            <a href="thanh-toan.html" class="btn tttt_btn">
+              TIẾP TỤC THANH TOÁN
+            </a>
+          </form>
+        </artical>
+      </div>
+    </div>
+  </section>
+
+
+
+        </div>
+
+
+
+        <!-- kết thúc nội dung -->
+    </main>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex">
+                <div class="col-md-3">
+                    <div class="store d-flex ">
+                        <img src="images/logo/logo2.png" class="img-footer" alt="">
+                        <a href="lienhe.html" class="storeBtn btn">TÌM CỬA HÀNG</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="content-foot">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+                                    <li class="head">
+                                        SẢN PHẨM
+                                    </li>
+
+
+                                    <li><a href="damVay.html">Đầm, váy</a></li>
+                                    <li><a href="aoDai.html">Áo dài</a></li>
+                                    <li><a href="vest.html">Vest</a></li>
+                                    <li><a href="chanVay.html">Chân váy</a></li>
+                                    <li><a href="quan.html">Quần</a></li>
+                                    <li><a href="setDo.html">Set đồ</a></li>
+                                    <li><a href="aoKhoac.html">Áo khoác</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+                                    <li class="head">
+                                        VỀ CÔNG TY
+                                    </li>
+                                    <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+                                    <li><a href="lien-he.html">Liên hệ</a></li>
+                                    <li><a href="#">Về MBA</a></li>
+
+                                    <li class="head">
+                                        THÀNH VIÊN
+                                    </li>
+                                    <li>Nguyễn Thị Trúc Mai</li>
+                                    <li>Châu Quế Bình</li>
+                                    <li>Trần Thu An</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="menu-bot">
+                                    <div class="head">
+                                        MBA SOCIAL
+                                    </div>
+                                    <div class="d-flex ">
+                                        <a href="#" class="socialIcon">
+                                            <img src="images/icon_social1.png" alt="">
+                                        </a>
+                                        <a href="#" class="socialIcon">
+                                            <img src="images/icon_social2.png" alt="">
+                                        </a>
+                                        <a href="#" class="socialIcon">
+                                            <img src="images/icon_social3.png" alt="">
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+
+
+                                    <div class="col-sm-6 col-lg-3 p-b-50">
+                                        <div class="head">
+                                            Newsletter
+                                        </div>
+
+                                        <form>
+                                            <div class="wrap-input1 w-full p-b-4">
+                                                <input class="input1 bg-none plh1 stext-107 cl7" type="text"
+                                                    name="email" placeholder="email@example.com">
+                                                <div class="focus-input1 trans-04"></div>
+                                            </div>
+
+                                            <div class="p-t-18">
+                                                <button
+                                                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                                    Subscribe
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>
+                                    Copy
+                                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                                    2020 MBA. All rights reserved
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to top -->
+    <a href="#home_page" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top"
+        title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="libs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="libs/Glider.js-master/glider.js"></script>
+    <script src="themes/js/main.js"></script>
+
+    
+  <!-- JS -->
+  <!-- <script src="libs/jquery/jquery-3.5.1.slim.js"></script> -->
+
+</body>
+
+</html>
