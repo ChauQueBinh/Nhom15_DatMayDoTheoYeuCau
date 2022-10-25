@@ -1,0 +1,33 @@
+#modal-login{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background: antiquewhite;
+   
+}
+.modal-title{
+    font-weight: bold;
+    text-align: center;
+  
+}
+.modal-header1{
+    float: left;
+   margin-left: 10%;
+   margin-right: -10%;
+    /* width: 30%; */
+}
+.modal-content{
+    height: 450px;
+}
+section a, section a:hover {
+    display: contents;
+}
+
+
+.hinh{
+    width: 30px;
+}
+
+._3051nA, .gZNAGg, .lhhucE {
+    display: flex;
+   
+}
