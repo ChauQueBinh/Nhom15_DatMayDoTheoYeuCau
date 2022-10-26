@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="typeahead.bundle.min.js">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/lib/typeahead.bundle.min.js.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
