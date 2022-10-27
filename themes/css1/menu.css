@@ -30,13 +30,13 @@ header .container-fluid #top-head {
 }
 header .container{
    
-        margin-left: 8%;
+        /* margin-left: 8%; */
     
 }
 
-/* header .container-fluid #sidebar ul.menu {
+header .container-fluid #sidebar ul.menu {
 margin-left: 10%;
-} */
+}
 header .container-fluid #sidebar ul.menu li.menu-item .menu-sub {
     position: fixed;
     top: 100%;

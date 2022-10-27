@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="themes/css/style_section.css">
   <link rel="stylesheet" href="themes/css1/menu.css">
   <link rel="stylesheet" href="themes/css1/footer.css">
-  <link rel="stylesheet" href="themes/css1/dang-nhap.css">
+  <!-- <link rel="stylesheet" href="themes/css1/dang-nhap.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -27,6 +27,7 @@
       <div id="top-head">
         <div class="container">
           <div class="d-flex">
+            
 
             <div class="col-md-11 col-sm-12">
 
@@ -46,24 +47,27 @@
                 <!-- kết thúc tìm kiếm -->
 
 
-                <!-- <li>
-                    <img src="images/icon_dang_nhap.png" alt="" />
-                    <a href="dang-nhap.html" data-toggle="modal" data-target="#funct_login">
-                      <span id="get_name_user">Đăng nhập</span>
-                    </a>
-                  </li>
-                  <li>
-                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                    <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                  </li> -->
-
                 <li>
                   <img src="images/icon_dang_nhap.png" alt="" />
-                  <a href="dang-nhap.html">Đăng nhập</a>
+                  <a href="#" data-toggle="modal" data-target="#funct_login">
+                    <span id="get_name_user">Đăng nhập</span>
+                  </a>
                 </li>
                 <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="dang-ky.html" >
+                    <span id="get_name_user">Đăng ký</span>
+                  </a>
+                </li>
+                <!-- <li>
                   <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                  <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
+                  <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
+                </li> -->
+
+               
+                <li>
+                  <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                  <a href="tra_cuu_don_hang.html" >Tra cứu đơn hàng</a>
                 </li>
                 <!-- <li>
                   <img src="images/icon_tim_cua_hang.png" alt="" />
@@ -145,8 +149,9 @@
                   </a>
                 </li>
                 <li class="menu-item">
-
+                  <img src="images/icon_dang_nhap.png" alt="" />
                 </li>
+               
 
 
               </ul>
@@ -200,7 +205,7 @@
       <!-- Noi dung -->
       <section id="modal-login">
 
-        <!-- <div class="container"> -->
+        <div class="container">
       
           <div class="modal-header1">
             <div class="d-flex w-100">
@@ -214,53 +219,10 @@
             </div>
           </div>
 
-          <!-- modal login -->
-          <div id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-
-                <div class="modal-body">
-                  <form id="frm_login">
-                    <h1 class="modal-title">Đăng nhập</h1>
-                    <div class="form-group">
-                      <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-                    </div>
-                    <a href="#" id="forget_pass">Quên mật khẩu?</a>
-                    <div class="form-group">
-                      <button><a href="#">Đăng nhập</a></button>
-                    </div>
-
-                  
-                    <ul class="icon-login">
-                      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-google" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                  </ul>
+       
 
 
-
-
-
-
-                
-
-
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        <!-- </div> -->
+        </div>
 
 
 
@@ -274,10 +236,54 @@
 
 
 
+
+
+
+<!-- modal login -->
+<div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="d-flex w-100">
+          <div class="col-md-12">
+          <img src="images/logo/logo1.png" alt="logo" id="funct_login--logo">
+          <h3 class="modal-title" id="funct_login--title">
+              CHÀO MỪNG ĐẾN VỚI MBA
+          </h3>
+          </div>
+          <div class="inner" id="btn_close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form id="frm_login">
+          <div class="form-group">
+            <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+          </div>
+          <a href="#" id="forget_pass">Quên mật khẩu?</a>
+          <div class="form-group">
+            <button><a href="#">Đăng nhập</a></button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p>Chưa có tài khoản tại MBA? <a href="dang-ky.html">Đăng ký</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     </div>
     <!-- kết thúc nội dung -->
   </main>
-
 
 
 
