@@ -221,7 +221,7 @@
   <section id="gio_hang_page">
     <div class="container">
       <div class="d-flex">
-        <artical id="content_cart" class="col-md-8 mr-4">
+        <artical id="content_cart" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-cart-right">
           <div id="add_prods" class="mb-5">
             <div class="title bottom--edit">
               <h5>BẠN CÓ CẦN THÊM?</h5>
@@ -443,9 +443,16 @@
             </div>
           </div>
 
+
+
+
         </artical>
-        <artical id="total_cart" class="col-md-4">
-          <h4>ĐƠN HÀNG</h4>
+
+
+        <artical id="total_cart" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-cart-right">
+            <li class="list-group-item title">ĐƠN HÀNG</li>
+            <li class="list-group-item divider"></li>
+            <li class="list-group-item title-1">NHẬP MÃ KHUYẾN MÃI</li>
           <form id="frm_bill">
             <div class="form-group">
               <label for="ip_code">NHẬP MÃ KHUYẾN MÃI</label>
@@ -454,12 +461,18 @@
                   <input type="text" name="ip_code" id="ip_code">
                 </div>
                 <div class="col-md-4">
-                  <button>ÁP DỤNG</button>
+                    <button class="btn btn-apply" type="button">ÁP DỤNG</button>
                 </div>
               </div>
             </div>
             <div class="form-group">
               <div class="col-md-12 d-flex">
+                <li class="list-group-item divider-1"></li>
+                <li class="list-group-item text-1">
+                  <span class="title-3">Đơn hàng</span>
+                  <span id="get_total_price" class="title-3-1 totalPriceOfCart">720.000 VND</span>
+                </li>
+
                 <strong>Đơn hàng</strong>
                 <strong>
                   <span id="get_total_price">520</span>
@@ -469,6 +482,11 @@
               <div class="col-md-12 d-flex">
                 <strong>Giảm</strong>
                 <strong><span id="get_code">0</span> VND</strong>
+
+                <li class="list-group-item text-2">
+                    <span class="title-3">Giảm</span>
+                    <span class="title-4-1 totalDiscountOfCart">0 VND</span>
+                  </li>
               </div>
             </div>
             <div class="form-group">
@@ -484,11 +502,6 @@
             </a>
           </form>
         </artical>
-
-
-
-
-
         
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 main-cart-right">
           <ul class="list-group">

@@ -61,8 +61,9 @@ header .container-fluid #sidebar ul.menu li.menu-item li:hover{
 }
 
 
-.btn:not(:disabled):not(.disabled) {
+.fa, .fas {
     color: white;
+ 
 }
 header .container-fluid #top-head ul li {
     padding: 8px 15px;
