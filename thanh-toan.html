@@ -25,6 +25,7 @@
       <div id="top-head">
         <div class="container">
           <div class="d-flex">
+            
 
             <div class="col-md-11 col-sm-12">
 
@@ -44,24 +45,27 @@
                 <!-- kết thúc tìm kiếm -->
 
 
-                <!-- <li>
-                    <img src="images/icon_dang_nhap.png" alt="" />
-                    <a href="dang-nhap.html" data-toggle="modal" data-target="#funct_login">
-                      <span id="get_name_user">Đăng nhập</span>
-                    </a>
-                  </li>
-                  <li>
-                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                    <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                  </li> -->
-
                 <li>
                   <img src="images/icon_dang_nhap.png" alt="" />
-                  <a href="dang-nhap.html">Đăng nhập</a>
+                  <a href="#" data-toggle="modal" data-target="#funct_login">
+                    <span id="get_name_user">Đăng nhập</span>
+                  </a>
                 </li>
                 <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="dang-ky.html" >
+                    <span id="get_name_user">Đăng ký</span>
+                  </a>
+                </li>
+                <!-- <li>
                   <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                  <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
+                  <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
+                </li> -->
+
+               
+                <li>
+                  <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                  <a href="tra_cuu_don_hang.html" >Tra cứu đơn hàng</a>
                 </li>
                 <!-- <li>
                   <img src="images/icon_tim_cua_hang.png" alt="" />
@@ -108,7 +112,7 @@
 
                             <div class="box__group">
                               <ul>
-                                <li><a href="daHoi.html">Dạ hội</a></li>
+                                <li><a href="vayDaHoi.html">Váy dạ hội</a></li>
                                 <li><a href="damVay.html">Đầm, váy</a></li>
                                 <li><a href="aoDai.html">Áo dài</a></li>
                                 <li><a href="vest.html">Vest</a></li>
@@ -143,8 +147,9 @@
                   </a>
                 </li>
                 <li class="menu-item">
-
+                  <img src="images/icon_dang_nhap.png" alt="" />
                 </li>
+               
 
 
               </ul>
@@ -164,7 +169,7 @@
   <!-- main -->
   <main id="home_page">
     <div class="main_home_page">
-      <div class="container" >
+  
 
    
       <section id="section_banner">
@@ -191,17 +196,238 @@
           </a>
         </div>
       </section>
-    
+   
+
 
 
 
       <!-- Noi dung -->
-      <section>
-        <h1>Nội dung</h1>
 
 
-        
-      </section>
+
+      <main id="checkout_page">
+        <div class="container">
+            <div class="d-flex">
+                <!-- section Info Custom, Payment -->
+                <div class="col-md-7 mr-4">
+                    <section id="info_shipping" class="mb-3">
+                        <p  class="collapse_title">
+                            <a class="btn d-flex" data-toggle="collapse" href="#address_box" aria-expanded="false" aria-controls="address_box">
+                                <span>THÔNG TIN GIAO HÀNG</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse show collapse--edit" id="address_box">
+                            <form id="frm_post_address" class="form_info">
+                                <div class="form-group">
+                                    <label for="getNameCus" class="col-md-3">Họ tên:</label>
+                                    <input type="text" name="getNameCus" id="getNameCus" readonly value="TRẦN THU AN">
+                                </div>
+                                <div class="form-group">
+                                    <label for="getPhoneCus" class="col-md-3">Số điện thoại:</label>
+                                    <input type="text" name="getPhoneCus" id="getPhoneCus" readonly value="0942559610">
+                                </div>
+                                <div class="form-group">
+                                    <label for="getAddress" class="col-md-3">
+                                        Địa chỉ giao hàng:
+                                    </label>
+                                    <textarea name="editAddress" id="editAddress" cols="70" rows="2" readonly>192, ấp An Khương, xã Hội An, huyện Chợ Mới, tỉnh An Giang
+                                    </textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" id="edit_btn" class="btn btn-md" data-toggle="modal" data-target="#modelEditInfoShip">
+                                       <span class="mr-2">THAY ĐỔI THÔNG TIN GIAO HÀNG</span>
+                                       <i class="far fa-edit"></i>
+                                      </button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section id="delivery_method" class="mb-3">
+                        <p class="collapse_title">
+                            <a class="btn d-flex" data-toggle="collapse" href="#delivery_box" aria-expanded="false" aria-controls="delivery_box">
+                            <span>PHƯƠNG THỨC GIAO HÀNG</span>
+                            <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <ul class="collapse show collapse--edit" id="delivery_box">
+                        <li class="form-check d-flex">
+                            <input type="radio" class="form-check-input" name="delivery" id="delivery_ghtk" value="delivery_ghtk" checked>
+                            <label for="delivery_ghtk" class="form-check-label d-flex">
+                            <span class="col-md-7">Giao hàng tiết kiệm (thời gian giao từ 2-7 ngày)</span>
+                            <img src="images/ghtk_logo.png" alt="" class="col-md-2">
+                            <span class="col-md-3">32.000 VND</span>
+                          </label>
+                        </li>
+                        <li class="form-check d-flex">
+                            <input type="radio" class="form-check-input" name="delivery" id="delivery_ghn" value="delivery_ghn">
+                            <label for="delivery_ghn" class="form-check-label d-flex">
+                            <span class="col-md-7">Giao hàng nhanh (thời gian giao từ 3-7 ngày)</span>
+                            <img src="images/ghn_logo.png" alt="" class="col-md-2">
+                            <span class="col-md-3">35.000 VND</span>
+                          </label>
+                        </li>
+                        <li class="form-check d-flex">
+                            <input type="radio" class="form-check-input" name="delivery" id="delivery_vp" value="delivery_vp">
+                            <label for="delivery_vp" class="form-check-label d-flex">
+                            <span class="col-md-7">Viettel Post (thời gian giao từ 5-10 ngày)</span>
+                            <img src="images/viettel_post.png" alt="" class="col-md-2">
+                            <span class="col-md-3">30.000 VND</span>
+                          </label>
+                        </li>
+                        </ul>
+                    </section>
+                    <section id="payment_method">
+                        <p class="collapse_title">
+                        <a class="btn d-flex" data-toggle="collapse" href="#payment_box" aria-expanded="false" aria-controls="payment_box">
+                                <span>PHƯƠNG THỨC THANH TOÁN</span>
+                                <i class="fas fa-chevron-down"></i>
+                        </a>
+                        </p>
+                        <div class="collapse show collapse--edit" id="payment_box">
+                            <div class="form-check d-flex">
+                            <input type="checkbox" class="form-check-input" name="pay" id="pay1" value="pay1" checked>
+                            <label for="pay1" class="form-check-label">
+                                <span>Thanh toán khi nhận hàng</span>
+                                <i class="fas fa-question-circle"></i>
+                                <div class="tt tooltip_cod">
+                                    Là phương thức thanh toán bằng tiền mặt trực tiếp khi nhận hàng
+                                </div>
+                                <img src="images/icon_COD.png" alt="">
+                            </label>
+                            
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- section price -->
+                <div class="col-md-5" id="total_checkout">
+                        <h4>ĐƠN HÀNG</h4>
+                        <hr>
+                        <ul id="listProd" class="p-0">
+                            <li class="list_item w-100 d-flex">
+                                <div class="col-md-9">
+                                    <span class="get_name_prod">
+                                        Basas Mono - High Top - All White
+                                    </span>
+                                    <div class="d-flex">
+                                        <p class="col-md-6">
+                                        Size: 
+                                        <span class="get_size_prod">38</span>
+                                        </p>
+                                        <p class="col-md-6">
+                                            x
+                                        <span class="get_qty_prod">1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <span class="get_price_prod">520</span>.000 VND
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul id="bill" class="p-0">
+                            <li class="bill_item d-flex w-100">
+                                <span class="col-md-6">
+                                    Đơn hàng
+                                </span>
+                                <p class="col-md-6" >
+                                    <span id="get_price_total">520</span>
+                                    .000 VND
+                                </p>
+                            </li>
+                            <li class="bill_item d-flex w-100">
+                                <span class="col-md-6">
+                                    Giảm
+                                </span>
+                                <p class="col-md-6" > -
+                                    <span id="get_discount">0</span>
+                                    .000 VND
+                                </p>
+                            </li>
+                            <li class="bill_item d-flex w-100">
+                                <span class="col-md-6">
+                                    <strong>
+                                        Phí vận chuyển
+                                    </strong>
+                                </span>
+                                <p class="col-md-6" >
+                                    <span id="get_discount">32</span>
+                                    .000 VND
+                                </p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex" id="total_bill">
+                            <div class="col-md-6">
+                                TỔNG CỘNG
+                            </div>
+                            <div class="col-md-6">
+                                <span id="total">582</span>.000 VND
+                            </div>
+                        </div>
+                        <a href="khach-hang.html" class="btn w-100" id="finish_order_btn">
+                            HOÀN TẤT ĐẶT HÀNG
+                        </a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal edit information shipping-->
+    <div class="modal fade" id="modelEditInfoShip" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">THAY ĐỔI THÔNG TIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frm_edit_address" class="form_info">
+                        <div class="form-group">
+                            <label for="editNameCus" class="col-md-3">Họ tên:</label>
+                            <input type="text" name="editNameCus" id="editNameCus" value="TRẦN THU AN" required>
+                            <i class="fas fa-eraser"></i>
+                        </div> 
+                        <div class="form-group">
+                            <label for="editPhoneCus" class="col-md-3">Số điện thoại:</label>
+                            <input type="text" name="editPhoneCus" id="editPhoneCus" value="0942559610" required>
+                            <i class="fas fa-eraser"></i>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="editAddress" class="col-md-3">
+                                Địa chỉ giao hàng:
+                            </label>
+                            <textarea name="editAddress" id="editAddress" cols="70" rows="2" required>192, ấp An Khương, xã Hội An, huyện Chợ Mới, tỉnh An Giang
+                            </textarea>
+                            <i class="fas fa-eraser"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-dark mr-3" data-dismiss="modal">ĐÓNG</button>
+                        <button type="button" class="btn" id="update_info_btn">CẬP NHẬT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- kết thúc nội dung -->
+
+
+  </div>
+  </main>
+
+
+
+
 
  <!-- modal login -->
  <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
@@ -210,9 +436,9 @@
       <div class="modal-header">
         <div class="d-flex w-100">
           <div class="col-md-12">
-            <img src="images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
+            <img src="images/logo/logo1.png" alt="logo" id="funct_login--logo" class="login--logo">
             <h3 class="modal-title" id="funct_login--title">
-              CHÀO MỪNG ĐẾN VỚI ANANAS
+              CHÀO MỪNG ĐẾN VỚI MBA
             </h3>
           </div>
           <div class="inner" id="btn_close">
@@ -242,19 +468,6 @@
     </div>
   </div>
 </div>
-
-
-    </div>
-    <!-- kết thúc nội dung -->
-
-
-  </div>
-  </main>
-
-
-
-
-
 
 
 
