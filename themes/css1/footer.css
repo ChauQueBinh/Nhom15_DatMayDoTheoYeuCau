@@ -5,9 +5,10 @@ footer .img-footer{
     width: 80%;
 }
 footer .content-foot .row:last-child p {
-margin-left: 200px;
+/* margin-left: 250px; */
+margin-left: 25%;
     margin-bottom: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .col-lg-3 {
@@ -18,14 +19,7 @@ height: 140px;
     width: 200px;
 }
 .p-t-18 .trans-04{
-    /* cursor: pointer; */
-    /* display: block;
-    width: 200px;
-    font-size: 20px;
-    color: #f1f1f1;
-    font-weight: 700; */
-    /* background-color: #ce2424; */
-    /* height: 40px; */
+ 
     border: 0;
     padding: 5px 25px;
     margin-bottom: 0;
@@ -36,4 +30,11 @@ height: 140px;
     bottom: 0;
     margin-top: 200px;
  
+}
+footer .content-foot .row:first-child .menu-bot .head {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    width: 155px;
 }
