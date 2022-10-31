@@ -1,17 +1,18 @@
 header .container-fluid  {
     position: fixed !important;
-    width: 100% !important;
+    /* width: 100% !important; */
     /* z-index: 1100; */
-   
+  
 }
 header .container-fluid #sidebar {
   
     background: white!important;
+    /* background: wheat; */
 }
 
 
 header .container-fluid #sidebar ul.menu li.menu-item {
-    padding:    0px 5% 0px 0px !important;
+    /* padding:    0px 5% 0px 0px !important; */
 
   
 }
@@ -29,27 +30,40 @@ header .container-fluid #top-head {
 }
 header .container{
    
-        margin-left: 8%;
+        margin-left: 10%;
     
 }
 
-/* header .container-fluid #sidebar ul.menu {
-margin-left: 10%;
-} */
+header .container-fluid #sidebar ul.menu {
+/* margin-left: 10%; */
+}
 header .container-fluid #sidebar ul.menu li.menu-item .menu-sub {
     position: fixed;
     top: 100%;
     left: 0%;
     z-index: 2;
-    min-width: 15vw;
-    height: 400px;
-    background-color: #4c4c4c;
+    min-width: 16vw;
+    height: 350px;
+    background-color: #000000;
     display: none;
-   font-size: 20px;
+   font-size: 16px;
+  font-weight: bold;
+ 
 
 }
-.btn:not(:disabled):not(.disabled) {
+
+header .container-fluid #sidebar ul.menu li.menu-item li:hover{
+   
+   font-size: 22px;
+  font-weight: bold;
+ 
+
+}
+
+
+.fa, .fas {
     color: white;
+ 
 }
 header .container-fluid #top-head ul li {
     padding: 8px 15px;
@@ -61,8 +75,13 @@ padding: 5px !important;
 
 
 .main_home_page{
-    padding-top: 140px;
+    /* padding-top: 140px; */
+    padding-top: 10%;
 }
 
 
 
+/* Logo phần đăng nhập */
+.login--logo{
+    width: 30%;
+}

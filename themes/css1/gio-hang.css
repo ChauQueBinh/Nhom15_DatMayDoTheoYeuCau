@@ -1,0 +1,51 @@
+#gio_hang_page #content_cart #btn_handle button, #gio_hang_page #content_cart #btn_handle a {
+    border-radius: 0px !important;
+    height: 40px !important;
+    width: 240px !important;
+    /* padding-top: 9px; */
+    border: none;
+    /* background-color: #ce2424 !important; */
+    color: #fff;
+    font-family: GeometricExtraBold;
+    font-size: 18px;
+}
+#gio_hang_page #content_cart #list_order .card .check_price button.delete_btn {
+    border-radius: 0px;
+    height: 40px;
+    width: 125px;
+    /* padding-top: 6px; */
+    border: #303030 1px solid;
+}
+#gio_hang_page #content_cart #list_order .card .check_price button {
+    /* background-color: #fff;
+    margin-bottom: 10px;
+    border: #a3a3a3 1px solid; */
+
+
+    border-radius: 0px;
+    height: 40px;
+    width: 125px;
+    /* padding-top: 6px; */
+    border: #303030 1px solid;
+}
+#gio_hang_page #total_cart #frm_bill .form-group .col-md-8 #ip_code {
+    display: block;
+    width: 100%;
+    height: 40px !important;
+    /* padding: 6px 12px; */
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    color: #000;
+    font-family: NunitoSanExtraBold;
+    font-size: 16px;
+}
+.title-3{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#gio_hang_page #total_cart {
+    height: 50%;
+}

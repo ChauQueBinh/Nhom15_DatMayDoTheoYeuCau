@@ -15,18 +15,20 @@
   <link rel="stylesheet" href="themes/css/style_section.css">
   <link rel="stylesheet" href="themes/css1/menu.css">
   <link rel="stylesheet" href="themes/css1/footer.css">
+  <link rel="stylesheet" href="themes/css1/thanh-toan.css">
 
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div id="top-head">
         <div class="container">
           <div class="d-flex">
 
-            <div class="col-md-11 col-sm-12">
+
+            <div class="col-md-12 col-sm-12">
 
               <ul class="d-flex">
                 <!-- Tìm kiếm -->
@@ -44,29 +46,21 @@
                 <!-- kết thúc tìm kiếm -->
 
 
-                <!-- <li>
-                    <img src="images/icon_dang_nhap.png" alt="" />
-                    <a href="dang-nhap.html" data-toggle="modal" data-target="#funct_login">
-                      <span id="get_name_user">Đăng nhập</span>
-                    </a>
-                  </li>
-                  <li>
-                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                    <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                  </li> -->
 
-                <li>
-                  <img src="images/icon_dang_nhap.png" alt="" />
-                  <a href="dang-nhap.html">Đăng nhập</a>
-                </li>
+                <!-- <li>
+                <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
+              </li> -->
+
+
                 <li>
                   <img src="images/icon_tra_cuu_don_hang.png" alt="" />
                   <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
                 </li>
                 <!-- <li>
-                  <img src="images/icon_tim_cua_hang.png" alt="" />
-                  <a href="tim-cua-hang.html">Tìm cửa hàng</a>
-                </li> -->
+                <img src="images/icon_tim_cua_hang.png" alt="" />
+                <a href="tim-cua-hang.html">Tìm cửa hàng</a>
+              </li> -->
                 <li>
                   <img src="images/icon_heart_header.png" alt="" />
                   <a href="yeu-thich.html">Yêu thích</a>
@@ -76,6 +70,19 @@
                   <a href="gio-hang.html">Giỏ hàng (<span>1</span>)</a>
                 </li>
 
+
+                <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="#" data-toggle="modal" data-target="#funct_login">
+                    <span id="get_name_user">Đăng nhập</span>
+                  </a>
+                </li>
+                <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="dang-ky.html">
+                    <span id="get_name_user">Đăng ký</span>
+                  </a>
+                </li>
 
               </ul>
             </div>
@@ -108,7 +115,7 @@
 
                             <div class="box__group">
                               <ul>
-                                <li><a href="damVay.html">Dạ hội</a></li>
+                                <li><a href="vayDaHoi.html">Váy dạ hội</a></li>
                                 <li><a href="damVay.html">Đầm, váy</a></li>
                                 <li><a href="aoDai.html">Áo dài</a></li>
                                 <li><a href="vest.html">Vest</a></li>
@@ -143,8 +150,9 @@
                   </a>
                 </li>
                 <li class="menu-item">
-
+                  <img src="images/icon_dang_nhap.png" alt="" />
                 </li>
+
 
 
               </ul>
@@ -161,12 +169,14 @@
     </div>
   </header>
 
+
+
   <!-- main -->
   <main id="home_page">
     <div class="main_home_page">
-      <div class="container" >
 
-   
+
+
       <section id="section_banner">
         <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
@@ -191,70 +201,477 @@
           </a>
         </div>
       </section>
-    
+
+
 
 
 
       <!-- Noi dung -->
-      <section>
-        <h1>Nội dung</h1>
 
 
+
+      <main id="checkout_page">
+        <div class="container">
+          <div class="d-flex">
+
+            <!-- <div class="row g-5"> -->
+            <div class="col-md-8 col-lg-8">
+              <h4 class="mb-3">Thông tin giao hàng</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Họ</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Họ hợp lệ là bắt buộc.
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Tên</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Tên hợp lệ là bắt buộc.
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-12">
+                    <label for="username" class="form-label">Tên tài khoản</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" id="username" placeholder="Username" required>
+                      <div class="invalid-feedback">
+                        Tên người dùng của bạn là bắt buộc.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-muted">(Tùy chọn)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Vui lòng nhập một địa chỉ email hợp lệ để cập nhật thông tin vận chuyển.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="phone" class="form-label">Số điện thoại </label>
+                    <input type="phone" class="form-control" id="phone" placeholder="0123456789">
+                    <div class="invalid-feedback">
+                      Vui lòng nhập số điện thoại hợp lệ để cập nhật thông tin vận chuyển.
+                    </div>
+                  </div>
+                  <!-- <div class="has-feedback">
+                    <input type="text" class="form-control" id="inputSuccess2" placeholder="Số điện thoại" name="customerPhone">
+                    <span class="" aria-hidden="true"></span>
+                </div> -->
+
+
+
+
+                  <div class="col-12">
+                    <label for="address" class="form-label">Địa chỉ giao hàng</label>
+                    <input type="text" class="form-control" id="address" placeholder="Quận Bình Thạnh" required>
+                    <div class="invalid-feedback">
+                      Vui lòng nhập địa chỉ vận chuyển của bạn.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Địa chỉ giao hàng khác <span class="text-muted">(Tùy
+                        chọn)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Quận Bình Thạnh ">
+
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="country" class="form-label">Tỉnh/ Thành phố</label>
+                    <!-- <select class="form-select" id="country" required>
+                      <option value="">Tỉnh/ Thành phố</option>
+                      <option>United States</option>
+                    </select> -->
+
+                    <select class="form-control" id="customerCity" name="customerCity">
+                      <option value="0">Tỉnh/ Thành Phố</option>
+                      <option value="5646">An Giang</option>
+                      <option value="5986">Bà Rịa – Vũng Tàu</option>
+                      <option value="5768">Bắc Giang</option>
+                      <option value="6189">Bắc Kạn</option>
+                      <option value="6394">Bạc Liêu</option>
+                      <option value="6224">Bắc Ninh</option>
+                      <option value="6034">Bến Tre</option>
+                      <option value="5779">Bình Định</option>
+                      <option value="5943">Bình Dương</option>
+                      <option value="5791">Bình Phước</option>
+                      <option value="5803">Bình Thuận</option>
+                      <option value="5814">Cà Mau</option>
+                      <option value="6089">Cần Thơ</option>
+                      <option value="6198">Cao Bằng</option>
+                      <option value="6012">Đà Nẵng</option>
+                      <option value="5824">Đắk Lắk</option>
+                      <option value="5840">Đắk Nông</option>
+                      <option value="6341">Điện Biên</option>
+                      <option value="5931">Đồng Nai</option>
+                      <option value="6063">Đồng Tháp</option>
+                      <option value="5849">Gia Lai</option>
+                      <option value="6298">Hà Giang</option>
+                      <option value="5867">Hà Nam</option>
+                      <option value="5953">Hà Nội</option>
+                      <option value="5874">Hà Tĩnh</option>
+                      <option value="5888">Hải Dương</option>
+                      <option value="6119">Hải Phòng</option>
+                      <option value="5901">Hậu Giang</option>
+                      <option value="5618">Hồ Chí Minh</option>
+                      <option value="6243">Hòa Bình</option>
+                      <option value="5910">Hưng Yên</option>
+                      <option value="5921">Khánh Hòa</option>
+                      <option value="5658">Kiên Giang</option>
+                      <option value="6365">Kon Tum</option>
+                      <option value="6332">Lai Châu</option>
+                      <option value="5674">Lâm Đồng</option>
+                      <option value="6212">Lạng Sơn</option>
+                      <option value="6384">Lào Cai</option>
+                      <option value="5996">Long An</option>
+                      <option value="5687">Nam Định</option>
+                      <option value="5698">Nghệ An</option>
+                      <option value="6270">Ninh Bình</option>
+                      <option value="6376">Ninh Thuận</option>
+                      <option value="6318">Phú Thọ</option>
+                      <option value="5720">Phú Yên</option>
+                      <option value="6135">Quảng Bình</option>
+                      <option value="6170">Quảng Nam</option>
+                      <option value="6155">Quảng Ngãi</option>
+                      <option value="6255">Quảng Ninh</option>
+                      <option value="6144">Quảng Trị</option>
+                      <option value="6077">Sóc Trăng</option>
+                      <option value="6352">Sơn La</option>
+                      <option value="5730">Tây Ninh</option>
+                      <option value="6279">Thái Bình</option>
+                      <option value="6288">Thái Nguyên</option>
+                      <option value="5740">Thanh Hóa</option>
+                      <option value="6109">Thừa Thiên – Huế</option>
+                      <option value="6022">Tiền Giang</option>
+                      <option value="6044">Trà Vinh</option>
+                      <option value="6310">Tuyên Quang</option>
+                      <option value="6054">Vĩnh Long</option>
+                      <option value="6099">Vĩnh Phúc</option>
+                      <option value="6233">Yên Bái</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Vui lòng chọn một Tỉnh/ Thành phố hợp lệ.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Quận/ Huyện</label>
+                    <!-- <select class="form-select" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>California</option>
+                    </select> -->
+                    <select class="form-control" id="customerDistrict" name="customerDistrict">
+                      <option value="0">Quận/ Huyện</option>
+                      <option value="1">Quận1</option>
+                      <option value="2">Quận2</option>
+                      <option value="3">Quận3</option>
+                      <option value="4">Quận4</option>
+                      <option value="5">Quận5</option>
+                      <option value="6">Quận6</option>
+                      <option value="7">Quận7</option>
+                      <option value="8">Quận8</option>
+                      <option value="9">Quận9</option>
+                      <option value="10">Quận10</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Vui lòng chọn một Quận/ Huyện hợp lệ.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="country" class="form-label">Phường/ Xã </label>
+                    <!-- <select class="form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>United States</option>
+                    </select> -->
+                    <select class="form-control" id="customerWard" name="customerWard">
+                      <option value="0">Phường/ Xã</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Vui lòng chọn một Phường/ Xã hợp lệ.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">Địa chỉ giao hàng giống với địa chỉ thanh toán của
+                    tôi</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Lưu thông tin này cho lần sau</label>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Thanh toán</h4>
+
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Thẻ tín dụng</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Thanh toán trực tiếp khi giao hàng</label>
+                  </div>
+                  <!-- <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div> -->
+                </div>
+
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Tên trên thẻ</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                    <small class="text-muted">Tên đầy đủ như hiển thị trên thẻ</small>
+                    <div class="invalid-feedback">
+                      Tên trên thẻ là bắt buộc
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Số thẻ tín dụng</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Số thẻ tín dụng là bắt buộc
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div> -->
+                </div>
+
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">
+                  <a href="khach-hang.html" class="btn w-100" id="finish_order_btn">
+                    Lưu thông tin tài khoản
+                  </a>
+                </button>
+              </form>
+            </div>
+
+            <!-- <div class="col-md-5 col-lg-4 order-md-last">
+                  <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Your cart</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Product name</h6>
+                        <small class="text-muted">Brief description</small>
+                      </div>
+                      <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Second product</h6>
+                        <small class="text-muted">Brief description</small>
+                      </div>
+                      <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Third item</h6>
+                        <small class="text-muted">Brief description</small>
+                      </div>
+                      <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <div class="text-success">
+                        <h6 class="my-0">Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                      </div>
+                      <span class="text-success">−$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <span>Total (USD)</span>
+                      <strong>$20</strong>
+                    </li>
+                  </ul>
         
-      </section>
+                  <form class="card p-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Promo code">
+                      <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                  </form>
+                </div> -->
 
- <!-- modal login -->
- <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex w-100">
-          <div class="col-md-12">
-            <img src="images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
-            <h3 class="modal-title" id="funct_login--title">
-              CHÀO MỪNG ĐẾN VỚI ANANAS
-            </h3>
+            <!-- </div> -->
+            <!-- section price -->
+            <div class="col-md-4" id="total_checkout">
+              <h4>ĐƠN HÀNG</h4>
+              <hr>
+              <ul id="listProd" class="p-0">
+                <li class="list_item w-100 d-flex">
+                  <div class="col-md-9">
+                    <span class="get_name_prod">
+                      Basas Mono - High Top - All White
+                    </span>
+                    <div class="d-flex">
+                      <p class="col-md-6">
+                        Size:
+                        <span class="get_size_prod">38</span>
+                      </p>
+                      <p class="col-md-6">
+                        x
+                        <span class="get_qty_prod">1</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <p>
+                      <span class="get_price_prod">520</span>.000 VND
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <hr>
+              <ul id="bill" class="p-0">
+                <li class="bill_item d-flex w-100">
+                  <span class="col-md-6">
+                    Đơn hàng
+                  </span>
+                  <p class="col-md-6">
+                    <span id="get_price_total">520</span>
+                    .000 VND
+                  </p>
+                </li>
+                <li class="bill_item d-flex w-100">
+                  <span class="col-md-6">
+                    Giảm
+                  </span>
+                  <p class="col-md-6"> -
+                    <span id="get_discount">0</span>
+                    .000 VND
+                  </p>
+                </li>
+                <li class="bill_item d-flex w-100">
+                  <span class="col-md-6">
+                    <strong>
+                      Phí vận chuyển
+                    </strong>
+                  </span>
+                  <p class="col-md-6">
+                    <span id="get_discount">32</span>
+                    .000 VND
+                  </p>
+                </li>
+              </ul>
+              <hr>
+              <div class="d-flex" id="total_bill">
+                <div class="col-md-6">
+                  TỔNG CỘNG
+                </div>
+                <div class="col-md-6">
+                  <span id="total">582</span>.000 VND
+                </div>
+              </div>
+              <a href="khach-hang.html" class="btn w-100" id="finish_order_btn">
+                HOÀN TẤT ĐẶT HÀNG
+              </a>
+            </div>
           </div>
-          <div class="inner" id="btn_close">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+
+
+
+
+
         </div>
-      </div>
-      <div class="modal-body">
-        <form id="frm_login">
-          <div class="form-group">
-            <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-          </div>
-          <a href="#" id="forget_pass">Quên mật khẩu?</a>
-          <div class="form-group">
-            <button><a href="#">Đăng nhập</a></button>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+
+      </main>
+
+      <!-- kết thúc nội dung -->
 
 
     </div>
-    <!-- kết thúc nội dung -->
-
-
-  </div>
   </main>
 
 
 
 
 
+
+
+
+
+
+
+
+  <!-- modal login -->
+  <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex w-100">
+            <div class="col-md-12">
+              <img src="images/logo/logo1.png" alt="logo" id="funct_login--logo" class="login--logo">
+              <h3 class="modal-title" id="funct_login--title">
+                CHÀO MỪNG ĐẾN VỚI MBA
+              </h3>
+            </div>
+            <div class="inner" id="btn_close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form id="frm_login">
+            <div class="form-group">
+              <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+            </div>
+            <a href="#" id="forget_pass">Quên mật khẩu?</a>
+            <div class="form-group">
+              <button><a href="#">Đăng nhập</a></button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -334,7 +751,7 @@
 
                   <div class="col-sm-6 col-lg-3 p-b-50">
                     <div class="head">
-                      Newsletter
+                      Đăng ký nhận email
                     </div>
 
                     <form>
@@ -346,7 +763,7 @@
 
                       <div class="p-t-18">
                         <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                          Subscribe
+                          Gửi
                         </button>
                       </div>
                     </form>

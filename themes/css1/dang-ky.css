@@ -1,10 +1,36 @@
+/*  */
+
+
+
+
+
+
+
+
+
+
 #modal-login{
     padding-top: 80px;
     padding-bottom: 80px;
-    background: antiquewhite;
+    background: #ffffff;
+  
    
 }
-.modal-title{
+#register_page {
+    background: #ffffff;
+}
+
+#register_page .box > .left {
+    height: 750px;
+}
+.login--register{
+    width: 30%;
+    margin-left: 64%;
+}
+
+
+/* Dang nhap cu */
+/* .modal-title{
     font-weight: bold;
     text-align: center;
   
@@ -13,7 +39,7 @@
     float: left;
    margin-left: 10%;
    margin-right: -10%;
-    /* width: 30%; */
+
 }
 .modal-content{
     height: 430px;
@@ -27,7 +53,7 @@ section .icon-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 30px; */
+ 
 
 }
 section  .icon-login li{
@@ -58,4 +84,4 @@ section .icon-login li i{
 }
 .modal-footer{
 margin-top: -20px;
-}
+} */

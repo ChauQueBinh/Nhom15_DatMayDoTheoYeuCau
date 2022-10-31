@@ -21,12 +21,13 @@
 <body>
   <!-- header -->
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div id="top-head">
         <div class="container">
           <div class="d-flex">
 
-            <div class="col-md-11 col-sm-12">
+
+            <div class="col-md-12 col-sm-12">
 
               <ul class="d-flex">
                 <!-- Tìm kiếm -->
@@ -44,21 +45,13 @@
                 <!-- kết thúc tìm kiếm -->
 
 
-                <!-- <li>
-                    <img src="images/icon_dang_nhap.png" alt="" />
-                    <a href="dang-nhap.html" data-toggle="modal" data-target="#funct_login">
-                      <span id="get_name_user">Đăng nhập</span>
-                    </a>
-                  </li>
-                  <li>
-                    <img src="images/icon_tra_cuu_don_hang.png" alt="" />
-                    <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
-                  </li> -->
 
-                <li>
-                  <img src="images/icon_dang_nhap.png" alt="" />
-                  <a href="dang-nhap.html">Đăng nhập</a>
-                </li>
+                <!-- <li>
+                  <img src="images/icon_tra_cuu_don_hang.png" alt="" />
+                  <a href="#" data-toggle="modal" data-target="#funct_login">Tra cứu đơn hàng</a>
+                </li> -->
+
+
                 <li>
                   <img src="images/icon_tra_cuu_don_hang.png" alt="" />
                   <a href="tra_cuu_don_hang.html">Tra cứu đơn hàng</a>
@@ -76,6 +69,19 @@
                   <a href="gio-hang.html">Giỏ hàng (<span>1</span>)</a>
                 </li>
 
+
+                <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="#" data-toggle="modal" data-target="#funct_login">
+                    <span id="get_name_user">Đăng nhập</span>
+                  </a>
+                </li>
+                <li>
+                  <img src="images/icon_dang_nhap.png" alt="" />
+                  <a href="dang-ky.html">
+                    <span id="get_name_user">Đăng ký</span>
+                  </a>
+                </li>
 
               </ul>
             </div>
@@ -108,7 +114,7 @@
 
                             <div class="box__group">
                               <ul>
-                                <li><a href="damVay.html">Dạ hội</a></li>
+                                <li><a href="vayDaHoi.html">Váy dạ hội</a></li>
                                 <li><a href="damVay.html">Đầm, váy</a></li>
                                 <li><a href="aoDai.html">Áo dài</a></li>
                                 <li><a href="vest.html">Vest</a></li>
@@ -143,8 +149,9 @@
                   </a>
                 </li>
                 <li class="menu-item">
-
+                  <img src="images/icon_dang_nhap.png" alt="" />
                 </li>
+
 
 
               </ul>
@@ -164,9 +171,9 @@
   <!-- main -->
   <main id="home_page">
     <div class="main_home_page">
-      <div class="container" >
 
-   
+
+
       <section id="section_banner">
         <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
@@ -229,61 +236,60 @@
         <h1>Nội dung</h1>
 
 
-        
+
       </section>
 
- <!-- modal login -->
- <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex w-100">
-          <div class="col-md-12">
-            <img src="images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
-            <h3 class="modal-title" id="funct_login--title">
-              CHÀO MỪNG ĐẾN VỚI ANANAS
-            </h3>
-          </div>
-          <div class="inner" id="btn_close">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <form id="frm_login">
-          <div class="form-group">
-            <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-          </div>
-          <a href="#" id="forget_pass">Quên mật khẩu?</a>
-          <div class="form-group">
-            <button><a href="#">Đăng nhập</a></button>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+      <!-- kết thúc nội dung -->
 
 
     </div>
-    <!-- kết thúc nội dung -->
-
-
-  </div>
   </main>
 
 
 
 
 
+  <!-- modal login -->
+  <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex w-100">
+            <div class="col-md-12">
+              <img src="images/logo/logo1.png" alt="logo" id="funct_login--logo" class="login--logo">
+              <h3 class="modal-title" id="funct_login--title">
+                CHÀO MỪNG ĐẾN VỚI MBA
+              </h3>
+            </div>
+            <div class="inner" id="btn_close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form id="frm_login">
+            <div class="form-group">
+              <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+            </div>
+            <a href="#" id="forget_pass">Quên mật khẩu?</a>
+            <div class="form-group">
+              <button><a href="#">Đăng nhập</a></button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -363,7 +369,7 @@
 
                   <div class="col-sm-6 col-lg-3 p-b-50">
                     <div class="head">
-                      Newsletter
+                      Đăng ký nhận email
                     </div>
 
                     <form>
@@ -375,11 +381,13 @@
 
                       <div class="p-t-18">
                         <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                          Subscribe
+                          Gửi
                         </button>
                       </div>
                     </form>
                   </div>
+
+
 
 
 
@@ -408,11 +416,18 @@
 
               </div>
             </div>
+
+
+
+
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+
+
 
 
   <!-- Back to top -->
