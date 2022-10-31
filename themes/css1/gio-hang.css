@@ -4,7 +4,7 @@
     width: 240px !important;
     /* padding-top: 9px; */
     border: none;
-    background-color: #ce2424 !important;
+    /* background-color: #ce2424 !important; */
     color: #fff;
     font-family: GeometricExtraBold;
     font-size: 18px;
@@ -41,4 +41,11 @@
     color: #000;
     font-family: NunitoSanExtraBold;
     font-size: 16px;
+}
+.title-3{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#gio_hang_page #total_cart {
+    height: 50%;
 }

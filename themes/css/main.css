@@ -65,7 +65,7 @@ header .container-fluid #sidebar ul.menu li.menu-item .menu-sub .container--w .c
 }
 
 header .container-fluid #sidebar ul.menu li.menu-item .menu-sub .container--w .cameo .color--orange {
-  color: #ce2424;
+  color: #f15f2f;
 }
 
 header .container-fluid #sidebar ul.menu li.menu-item .menu-sub .box {
@@ -120,7 +120,7 @@ header .container-fluid #sidebar ul.menu li.menu-item .menu-sub .box .box__group
 }
 
 header .container-fluid #sidebar ul.menu li.menu-item .menu-sub .box .box__group a:hover {
-  color: #ce2424;
+  color: #f15f2f;
   font-weight: 600;
 }
 
@@ -156,7 +156,7 @@ header .container-fluid #top-head ul li a {
 }
 
 header .container-fluid #top-head ul li a:hover {
-  color: #ce2424;
+  color: #f15f2f;
 }
 
 header .container-fluid #sidebar {
@@ -196,7 +196,7 @@ header .container-fluid #sidebar ul.menu li.menu-item > a h4 {
 }
 
 header .container-fluid #sidebar ul.menu li.menu-item > a:hover {
-  color: #ce2424;
+  color: #f15f2f;
 }
 
 header .container-fluid #sidebar ul.menu li.menu-item > a:hover .fa-chevron-down {
@@ -327,7 +327,7 @@ header .container-fluid #sidebar #searchBox .form-group #searchInput {
 }
 
 header .container-fluid #sidebar #searchBox .form-group #searchInput:focus {
-  border-color: #ce2424;
+  border-color: #f15f2f;
   font-weight: 600;
 }
 
@@ -370,7 +370,7 @@ footer .store .storeBtn {
   font-size: 20px;
   color: #f1f1f1;
   font-weight: 700;
-  background-color: #ce2424;
+  background-color: #f15f2f;
 }
 
 footer .content-foot {
@@ -448,7 +448,7 @@ footer .content-foot .row:last-child p {
   position: fixed;
   bottom: 50px;
   right: 20px;
-  background-color: #ce2424;
+  background-color: #f15f2f;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -555,13 +555,13 @@ footer .content-foot .row:last-child p {
 #funct_login .modal-body .form-group button {
   border: none;
   padding: 0;
-  background-color: #ce2424;
+  background-color: #f15f2f;
 }
 
 #funct_login .modal-body .form-group button a {
   display: block;
   width: 100%;
-  background-color: #ce2424;
+  background-color: #f15f2f;
   text-decoration: none;
   color: #fefefe;
   font-size: 20px;
@@ -570,7 +570,7 @@ footer .content-foot .row:last-child p {
 
 #funct_login .modal-body #forget_pass {
   margin-bottom: 15px;
-  color: #ce2424;
+  color: #f15f2f;
 }
 
 #funct_login .modal-footer {
@@ -584,6 +584,6 @@ footer .content-foot .row:last-child p {
 
 #funct_login .modal-footer a {
   text-decoration: none;
-  color: #ce2424;
+  color: #f15f2f;
 }
 /*# sourceMappingURL=main.css.map */
