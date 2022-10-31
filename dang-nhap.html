@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="themes/css/style_section.css">
   <link rel="stylesheet" href="themes/css1/menu.css">
   <link rel="stylesheet" href="themes/css1/footer.css">
+  <link rel="stylesheet" href="themes/css1/dang-nhap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -163,121 +165,93 @@
 
   <!-- main -->
   <main id="home_page">
-    <div class="main_home_page">
-      <div class="container" >
 
-   
-      <section id="section_banner">
-        <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <a class="carousel-item active">
-              free shipping hoá đơn từ 800k!
-            </a>
-            <a class="carousel-item">
-              hàng 2 tuần nhận đổi - giày nữa năm bảo hành
-            </a>
-            <a class="carousel-item">
-              buy more pay less - áp dụng khi mua phụ kiện
-            </a>
-          </div>
-          <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
-            <!-- carousel-control-prev-icon -->
-            <span class="fas fa-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
-            <span class="fas fa-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </section>
-      <section id="poster_main">
-        <div class="container">
-          <div class="glider-contain">
-            <div class="glider--poster">
-              <a href="#">
-                <img src="images/banner/slide-01.jpg" alt="">
-              </a>
-              <a href="#">
-                <img src="images/banner/slide-04.jpg" alt="">
-              </a>
-              <a href="#">
-                <img src="images/banner/slide-05.jpg" alt="">
-              </a>
-            </div>
-            <div role="tablist" class="rect rect--poster"></div>
-          </div>
-        </div>
-        <script>
-          $("#poster_main").ready(function () {
-            window.addEventListener('load', function () {
-              new Glider(document.querySelector('.glider--poster'), {
-                slidesToShow: 1,
-                dots: '.rect--poster',
-                draggable: true
-              });
-            })
-          })            
-        </script>
-      </section>
+    <div class="main_home_page">
+
+
+
 
 
 
 
       <!-- Noi dung -->
-      <section>
-        <h1>Nội dung</h1>
+      <section id="modal-login">
 
+        <div class="container">
+          <div class="modal-header1">
+            <div class="d-flex w-100">
+              <div class="col-md-12">
+                <img src="images/logo/logo4.png" alt="logo" id="funct_login--logo">
+                <h3 class="modal-title">
+                  CHÀO MỪNG ĐẾN VỚI MBA
+                </h3>
+              </div>
 
-        
-      </section>
-
- <!-- modal login -->
- <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex w-100">
-          <div class="col-md-12">
-            <img src="images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
-            <h3 class="modal-title" id="funct_login--title">
-              CHÀO MỪNG ĐẾN VỚI ANANAS
-            </h3>
+            </div>
           </div>
-          <div class="inner" id="btn_close">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+
+          <!-- modal login -->
+          <div id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <form id="frm_login">
+                    <h1 class="modal-title">Đăng nhập</h1>
+                    <div class="form-group">
+                      <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+                    </div>
+                    <a href="#" id="forget_pass">Quên mật khẩu?</a>
+                    <div class="form-group">
+                      <button><a href="#">Đăng nhập</a></button>
+                    </div>
+
+                  
+                    <ul class="icon-login">
+                      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  </ul>
+
+
+
+
+
+
+                
+
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+
+
         </div>
-      </div>
-      <div class="modal-body">
-        <form id="frm_login">
-          <div class="form-group">
-            <input type="email" name="ip_email" id="ip_email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
-          </div>
-          <a href="#" id="forget_pass">Quên mật khẩu?</a>
-          <div class="form-group">
-            <button><a href="#">Đăng nhập</a></button>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
+
+
+      </section>
+      <!-- kết thúc nội dung -->
+
 
 
     </div>
     <!-- kết thúc nội dung -->
-
-
-  </div>
   </main>
 
 
